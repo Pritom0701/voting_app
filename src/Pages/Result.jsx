@@ -5,22 +5,22 @@ import axios from 'axios';
 
 const Result = () => {
     const [votes, setVotes] = useState([]);
-    const [timeElapsed, setTimeElapsed] = useState(0); // Time in seconds
+    const [timeElapsed, setTimeElapsed] = useState(10); // Time in seconds
     const [timerFinished, setTimerFinished] = useState(false);
     const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
     useEffect(() => {
         fetchVotes();
 
-        const voteInterval = setInterval(fetchVotes, 3000);
+        const voteInterval = setInterval(fetchVotes, 2000);
         const timer = setInterval(() => {
             setTimeElapsed(prev => {
-                if (prev >= 19) {  // At 20 seconds
+                if (prev == 1) {  // At 20 seconds
                     clearInterval(timer);
                     clearInterval(voteInterval);
                     setTimerFinished(true);
                 }
-                return prev + 1;
+                return prev - 1;
             });
         }, 1000);
 
@@ -72,6 +72,9 @@ const Result = () => {
                     </div>
                 ))}
             </main>
+            <footer>
+                <p>Presented by - Inspired IT & Soft Code Loop</p>
+            </footer>
         </div>
     );
 };

@@ -20,10 +20,11 @@
 }
 
 .home-link {
-    background-color: #3498db;
+    background-color: #5148D9;
+    margin-top: 20px;
     color: white;
     padding: 10px 20px;
-    border-radius: 30px;
+    border-radius: 10px;
     text-decoration: none;
     font-weight: 600;
     transition: 0.3s ease;
@@ -48,11 +49,11 @@
 /* Results Container */
 .results-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
-    justify-items: center;
     padding-right: 40px;
     padding-left: 40px;
+    margin-bottom: 118px;
 }
 
 /* Single Result Card */
@@ -132,5 +133,26 @@
     .result-header {
         flex-direction: column;
         gap: 20px;
+    }
+    .home-link {
+        background-color: #5148D9;
+        margin-top: 0px;
+        color: white;
+        text-align: center;
+        width: 250px;
+        padding: 10px 16px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.3s ease;
+    }
+    .results-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        justify-items: center;
+        padding-right: 40px;
+        padding-left: 40px;
+        margin-bottom: 100px;
     }
 }

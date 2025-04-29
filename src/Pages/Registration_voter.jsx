@@ -63,7 +63,6 @@ const Registration_voter = () => {
         <div>
             <header>
                 <h1>Voter Registration</h1>
-                <Link to="/">Back to Home</Link>
             </header>
 
             <main className="container">

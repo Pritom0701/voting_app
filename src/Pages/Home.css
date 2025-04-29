@@ -182,11 +182,14 @@ footer {
     }
 
     .nav-links {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(1fr / 3);
     }
-
+    
     .nav-links a {
-        width: 90%;
-        margin: 5px auto;
+        text-align: center;
+        margin: 0;
+        padding: 10px 10px 8px;
+        width: 250px;
     }
 }

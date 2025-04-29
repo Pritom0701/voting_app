@@ -97,3 +97,33 @@ header a:hover{
 .submit-btn:hover {
     background-color: rgb(47, 36, 209);
 }
+
+
+
+
+
+@media (max-width: 860px) {
+    .container {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        margin-left: -18px;
+        margin-right: -18px;
+    }
+    .registration-form input {
+        width: 94.5%;
+        height: 27px;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+    header h1{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}

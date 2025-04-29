@@ -8,7 +8,7 @@ const Home = () => {
     const [candidates, setCandidates] = useState([]);
     const [selectedCandidate, setSelectedCandidate] = useState(null);
     const [hasVoted, setHasVoted] = useState(false);
-    const [timeLeft, setTimeLeft] = useState(20); // 20 seconds for demo purposes
+    const [timeLeft, setTimeLeft] = useState(600); // 20 seconds for demo purposes
     const [votingClosed, setVotingClosed] = useState(false);
 
     const BASE_URL = import.meta.env.VITE_API_BASE_URL;
